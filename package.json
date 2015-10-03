@@ -14,5 +14,8 @@
   "license": "BSD",
   "bin": {
     "base64": "./bin/base64"
+  },
+  "dependencies": {
+    "optimist": "^0.6.1"
   }
 }
