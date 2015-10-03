@@ -6,6 +6,13 @@
   "scripts": {
     "test": "if [\"$(bin/base64 test)\" == \"$(echo 'test' | bin/base64)\"]; then echo 'passed'; else echo 'failed'; fi;"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/MrSwitch/base64-cli"
+  },
+  "author": "Andrew Dodson <andrewjdodson@gmail.com>",
+  "license": "BSD",
+  "bin": {
+    "base64": "./bin/base64"
+  }
 }
