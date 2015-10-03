@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var base64  = require('../base64'),
+	argv       = require('optimist').argv;
+
+if (argv._[0]) {
+	process.stdout.write(base64(argv._[0]));
+}
+
+else {
+	process.stdin.resume();
+	process.stdin.setEncoding('utf8');
+	process.stdin.on('data', function(data) {
+		process.stdout.write(base64(data.replace(/\n$/,'')));
+	});
+}

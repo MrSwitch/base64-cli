@@ -1,0 +1,11 @@
+{
+  "name": "base64-cli",
+  "version": "1.0.0",
+  "description": "pipe the base",
+  "main": "base64.js",
+  "scripts": {
+    "test": "if [\"$(bin/base64 test)\" == \"$(echo 'test' | bin/base64)\"]; then echo 'passed'; else echo 'failed'; fi;"
+  },
+  "author": "",
+  "license": "ISC"
+}
