@@ -1,6 +1,6 @@
 {
   "name": "base64-cli",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "pipe the base",
   "main": "base64.js",
   "scripts": {
